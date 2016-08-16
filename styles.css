@@ -120,7 +120,7 @@ body {
   position: absolute;
   top: 11%;
   left: 50%;
-  color: #fe0000;
+  color: white;
   margin-left: -9px;
 }
 
@@ -161,28 +161,28 @@ body {
   bottom: 0;
 }
 
-.menu-blocks p {
+.menu-blocks div.block {
   width: 33.3%;
   height: 50%;
   margin: 0;
   float: left;
 }
 
-.menu-blocks p:hover {
+.menu-blocks div.block:hover {
   border: 2px solid #c4c3c3;
 }
 
-#block4 {
+#our-team {
   clear: left;
 }
 
-.menu-blocks div {
+.menu-blocks div:last-child {
   clear: both;
 }
 
-#about-us img {
+.block img {
   display: block;
-  width: 138px;
+  width: 107px;
   height: auto;
   margin: 0 auto;
 }
