@@ -1,38 +1,150 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <html>
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>orlovestudio</title>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+  <link rel="stylesheet" href="style/Normalize.css">
   <link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style/build/styles.css">
+
+  <script>
+  	$(function() {
+  		$('td').hover(function() {
+  			$(this).css('background-color', '#ffffff');
+  			$(this).css('cursor', 'pointer');
+  		},
+  		function() {
+  			$(this).css('background-color', '#f1f1f1');
+  		});
+  		$("td").click(function() {
+  			window.location = $(this).find("a").attr("href"); 
+  			return false;
+		});
+  	});
+  </script>
 
 </head>
 <body>
-  <article id="home" class="main-page">
-    <div class="container-left"></div>
-    <div class="border-between-blocks"></div>
+	<div class="main_body clearfix">
+		<div class="main_container_left"></div>
+		<div class="border_between_containers"></div>
+		<div class="main_container_right"></div>
 
-    <main role="main">
-      <div class="content">
-        <div class="title"></div>
-        <div id="left-text" class="slogan">мы работаем сегодня</div>
-        <div id="right-text" class="slogan">вы зарабатываете завтра</div>
-      </div>
-    </main>
+		<div class="main_content">
+			<div></div>
+			<div class="slogan">
+				<div>мы работаем сегодня</div>
+				<div>вы зарабатываете завтра</div>
+				<div></div>
+			</div>
+		</div>
 
-    <ul class="lang-symbols">
-      <li>en</li>
-      <li>ru</li>
-    </ul>
+		<ul class="lang_symbols">
+			<li id="en">en</li>
+			<li id="ru">ru</li>
+		</ul>
 
-    <div class="menu-icon">
-      <a href="menu.html"><i class="fa fa-bars" aria-hidden="true"></i></a>
-    </div>
-  </article>
+		<div class="menu_btn">
+			<span ><i class="fa fa-bars fa-lg" aria-hidden="true"></i></span>
+		</div>
+	</div>
+
+
+    <div class="menu_body" id="menu_page">
+		<div class="go_back">
+			<a class="go_to_main"></a>
+		</div>
+		<div class="menu_container">
+			<header>
+				<div></div>
+				<h1>Digital-агенство orlovestudio</h1>
+			</header>
+
+			<nav class="menu_blocks">
+				<table>
+					<tr>
+						<td>
+							<a href="about-us.html">
+								<div>
+									<div class="with-pic">
+										<div id="about_us"></div>
+										<p>о нас</p>
+									</div>
+									<span class="without-pic">о нас</span>
+								</div>
+							</a>
+						</td>
+						<td>
+							<a href="services.html">
+								<div>
+									<div class="with-pic">
+										<div id="services"></div>
+										<p>услуги</p>
+									</div>
+									<span class="without-pic">услуги</span>
+								</div>
+							</a>
+						</td>
+						<td>
+							<a href="collaboration.html">
+								<div>
+									<div class="with-pic">
+										<div id="collaboration"></div>
+										<p>с нами сотрудничают</p>
+									</div>
+									<span class="without-pic">с нами сотрудничают</span>
+								</div>
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="our-team.html">
+								<div>
+									<div class="with-pic">
+										<div id="our_team"></div>
+										<p>наша команда</p>
+									</div>
+									<span class="without-pic">наша команда</span>
+								</div>
+							</a>
+						</td>
+						<td>
+							<a href="blog.html">
+								<div>
+									<div class="with-pic">
+										<div id="blog"></div>
+										<p>корпоративный блог</p>
+									</div>
+									<span class="without-pic">корпоративный блог</span>
+								</div>
+							</a>
+						</td>
+						<td>
+							<a href="contacts.html">
+								<div>
+									<div class="with-pic">
+										<div id="contacts"></div>
+										<p>контакты</p>
+									</div>
+									<span class="without-pic">контакты</span>
+								</div>
+							</a>
+						</td>
+					</tr>
+				</table>
+			</nav>
+		</div>
+	</div>
+
+	<script   src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+
+    <script src="js/jquery.transform2d.js"></script>
+    <script src="js/main.js"></script>
+
 </body>
 </html>
